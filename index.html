@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <meta name="theme-color" content="#7952b3" />
+    <link rel="stylesheet" href="assets/css/bootstrap-tag-input.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/dashboard.css" rel="stylesheet" />
+    <script src="source.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header-profile-search">
+            <div class="header-logo">
+                <span><img src="img_avatar.png" alt="Avatar" class="avatar"></span> <span class="logo-name">Profile
+                    Logo</span>
+            </div>
+            <div class="header-search">
+                <input class="form-control form-control-dark w-100" type="text" placeholder="Search"
+                    aria-label="Search" /> <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+        <div class="navbar-nav">
+            <div class="nav-item header-nav-item">
+                <a class="nav-link px-3" href="#">
+                    <i class="fas fa-question-circle"></i>
+                </a>
+                <a class="nav-link px-3" href="#">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <a class="nav-link px-3" href="#">
+                    <i class="fas fa-cog"></i>
+                </a>
+                <a class="nav-link px-3" href="#">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-3 shadow">
+        <div class="second-header-box">
+            <div class="project-name">
+                Project 1
+            </div>
+            <div>
+                <button class="btn btn-primary create-btn">
+                    Create New Project
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <h1 class="
+                d-flex
+                justify-content-between
+                align-items-center
+                px-3
+                mt-2
+                mb-1
+                text-muted
+                select-source-text
+              ">
+                        <span>Select Source</span>
+                    </h1>
+                    <hr />
+                    <ul class="nav flex-column mb-2 checkbox">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="checkbox-input"><input type="checkbox" checked id="selectSource_FB"
+                                        name="selectSource" onclick="selecctSource('selectSource_FB')" /></span>
+                                <span class="social-text ml-2 mr-2 text-muted">Facebook</span>
+                                <span><i class="social-icon fab fa-facebook-square"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="checkbox-input"><input type="checkbox" id="selectSource_Twitr"
+                                        name="selectSource" onclick="selecctSource('selectSource_Twitr')" /></span>
+                                <span class="social-text ml-2 mr-2 text-muted">Twitter</span>
+                                <span><i class="social-icon fab fa-twitter-square"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="checkbox-input"><input type="checkbox" id="selectSource_YT"
+                                        name="selectSource" onclick="selecctSource('selectSource_YT')" /></span>
+                                <span class="social-text ml-2 mr-2 text-muted">Youtube</span>
+                                <span><i class="social-icon fab fa-youtube-square"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="checkbox-input"><input type="checkbox" id="selectSource_Insta"
+                                        name="selectSource" onclick="selecctSource('selectSource_Insta')" /></span>
+                                <span class="social-text ml-2 mr-2 text-muted">Instagram</span>
+                                <span><i class="social-icon fab fa-instagram"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="checkbox-input"><input type="checkbox" id="selectSource_Link"
+                                        name="selectSource" onclick="selecctSource('selectSource_Link')" /></span>
+                                <span class="social-text ml-2 mr-2 text-muted">LinkedIn</span>
+                                <span><i class="social-icon fab fa-linkedin"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-4">
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-dark add-source-btn">
+                                    Add Sources
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="shadow tags-select-container" id="modal-box">
+                            <div class="icon-text-input">
+                                <span id="selectSource_Icon"><i id='fa_icon'
+                                        class="social-icon fab fa-facebook-square"></i></span> <span
+                                    class="ml-2 enter-text mb-3" id="modalContainer">Please Enter Facebook Names</span>
+                            </div>
+                            <div class="tags-input-box mt-lg-4">
+                                <input id="tag-input" type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo"
+                                    data-role="tagsinput" />
+                                <!-- <input type="text" id="tag-input1"> -->
+                                <button class="btn btn-primary add-btn" onclick="addTag()"><i
+                                        class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="mt-4 fetch-data-div" id="fetchBtn">
+                                <button type="button" class="btn btn-dark add-source-btn">
+                                    Fetch Data <span><i class="fas fa-arrow-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            var tagInput = $("#tag-input").val();
+
+            if (tagInput.length <= 0) {
+                document.getElementById('fetchBtn').style.display = 'none';
+            }
+
+            $('input#tag-input').on('itemRemoved', function (event) {
+                var tagInput = $("#tag-input").val();
+                if (tagInput.length <= 0) {
+                    document.getElementById('fetchBtn').style.display = 'none';
+                }
+            });
+
+            $('input#tag-input').on('itemAdded', function (event) {
+                var tagInput = $("#tag-input").val();
+                if (tagInput.length >= 0) {
+                    document.getElementById('fetchBtn').style.display = 'flex';
+                }
+            });
+        })
+
+        function addTag() {
+            $('input#tag-input').on('itemAddedOnInit', function (event) {
+            });
+        }
+    </script>
+</body>
+
+</html>
